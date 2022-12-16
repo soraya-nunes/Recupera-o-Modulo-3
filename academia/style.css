@@ -1,0 +1,253 @@
+* {
+    margin: auto 0;
+    background: #000000;
+
+}
+
+
+
+.banner img {
+    width: 50%;
+   
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        width: 100%;
+    }
+}
+
+.nav-link {
+    color: orange;
+}
+
+container-fluid li {
+    color: orange;
+
+}
+
+
+main {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.calculadora {
+    width: 50%;
+    height: 20%;
+    background-color: #081826;
+    margin-top: 10%;
+    
+   
+  
+}
+
+.form-group{
+    background-color: #081826;
+    padding: 20px;
+    color: orange;
+  
+    
+}
+
+.result{
+    background-color: #364959;
+    color: white;
+}
+
+.planos{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*CONTATOS*/
+
+
+:root{
+    --color-white: #fff;
+    --color-green: #36e650;
+    --color-dark1: #181818;
+    --color-red:red;
+    --color-purple1: #F27405;
+ 
+}
+
+#form{
+    margin-top: 20px;
+    overflow: auto;
+    background-color: #364959;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 200px;
+   
+ 
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+}
+
+.span-required{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--color-red);
+    display: none;
+}
+
+#form .inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-purple1 ) ;
+    color: (--color-dark);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+#form .inputs:focus{
+    border-color: greenyellow;
+}
+
+.box-select{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+#form button[type="submit"]{
+    background: linear-gradient(to bottom left, #081826 25%, #e18300);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 105px;
+    height: 40px;
+    transition: background 500ms, color 500ms;
+    margin-left: 20px;
+}
+
+
+
+#form button[type="submit"]:hover{
+    background: transparent;
+    border: 2px solid #64ff6a;
+    color: #64ff6a;
+}
+
+@media screen and (max-width: 576px) {
+    .box-select{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+#form .form-row{
+
+    color: #ffffff;
+}
+
+#confirmacaoDeEnvio{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#confirmacaoDeEnvio>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+   
+  
+
+}
+
+#confirmacaoDeEnvio>div p{
+   color: black;
+
+}
+a.botao-login{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.botao-login:hover{
+text-decoration: none;
+}
+
+/*input:valid{
+    border-color: #64ff6a;
+}
+
+input:invalid{
+    border-color: red;
+}*/
+
+.senhaInvalida input{
+    border-color: red;
+    
+
+}
+
+.senhaInvalida:after{
+content: "Por favor, digite a mesma senha em ambos os campos";
+padding-left: 5px;
+font-size: 10px;
+color: lightcoral;
+}
+
+.formrodape .span-requiredrodape{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: red;
+    display: none;
+}
+
+.formrodape .inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid violet ;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.formrodape .inputs:focus{
+    border-color: greenyellow;
+}
